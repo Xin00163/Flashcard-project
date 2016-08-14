@@ -1,4 +1,19 @@
+.flashcard-container {
+  width: 400px;
+  margin:0 auto;
+}
+
+.flashcard {
+  border: 5px solid black;
+}
+
 .flashcard-image {
   height: 400px;
   width: 250px;
+  display:block;
+  margin:0 auto;
+}
+
+.flashcard-back{
+  text-align: center;
 }
