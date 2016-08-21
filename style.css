@@ -1,9 +1,14 @@
-.flashcard-container {
+.flashcard {
   width: 400px;
   margin:0 auto;
+  display: none;
 }
 
-.flashcard {
+.flashcard.current{
+  display: block;
+}
+
+.flashcard-body {
   border: 5px solid black;
 }
 

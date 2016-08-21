@@ -1,9 +1,15 @@
 $(document).ready(function() {
-  $(".flashcard").on("click", function(){
+  $(".flashcard-body").on("click", function(){
     var visible = $(this)
-    var hidden = $(".hide")
+    var hidden = visible.next(".hide")
 
     visible.addClass("hide")
     hidden.removeClass("hide")
+
+    if(visible.hasClass("flashcard-back")){
+      var parent = visible.parent()
+      parent.removeClass("current")
+      parent.next().addClass("current")
+    }
   })
 });
