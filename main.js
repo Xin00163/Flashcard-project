@@ -3,6 +3,7 @@ $(document).ready(function() {
     var visible = $(this)
     var hidden = visible.next(".hide")
 
+
     visible.addClass("hide")
     hidden.removeClass("hide")
 
