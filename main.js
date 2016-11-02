@@ -1,16 +1,10 @@
 $(document).ready(function() {
-  $(".flashcard-body").on("click", function(){
-    var visible = $(this)
-    var hidden = visible.next(".hide")
-
-
-    visible.addClass("hide")
-    hidden.removeClass("hide")
-
-    if(visible.hasClass("flashcard-back")){
-      var parent = visible.parent()
-      parent.removeClass("current")
-      parent.next().addClass("current")
-    }
-  })
+  $(".flashcard-front").on("click", function(){
+    $(this).addClass("hide");
+    $(this).next(".flashcard-back").removeClass("hide");
+  });
+  $(".flashcard-back").on("click", function(){
+    $(this).addClass("hide");
+    $(this).prev(".flashcard-front").removeClass("hide");
+  });
 });

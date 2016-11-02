@@ -2,6 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>Flashcard</title>
   <link rel="stylesheet" href="style.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -9,8 +11,50 @@
 
   </head>
   <body>
-    <div class="flashcard current">
-      <div class="flashcard-body flashcard-front">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Learning Chinese Flashcard</h1>
+          <p>This is a fashcard that helps you to learn Chinese. Simply click on the image to get the Chinese charater, pronounciation and English translation.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="flashcard-front">
+            <img class="flashcard-image" src="http://www.publicdomainpictures.net/pictures/40000/velka/dog-cartoon.jpg"/>
+          </div>
+          <div class="flashcard-back hide" >
+            <p>狗</p>
+            <p>gǒu<p>
+            <p>Dog</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="flashcard-front">
+            <img class="flashcard-image" src="http://www.publicdomainpictures.net/pictures/180000/velka/tiger-in-the-snow.jpg"/>
+          </div>
+          <div class="flashcard-back hide" >
+            <p>老虎</p>
+            <p>Lǎo hǚ<p>
+            <p>Tiger</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="flashcard-front">
+            <img class="flashcard-image" src="http://image.shutterstock.com/display_pic_with_logo/174691/293582219/stock-vector-vector-illustration-of-pig-in-graphic-style-hand-drawing-illustration-293582219.jpg"/>
+          </div>
+          <div class="flashcard-back hide" >
+            <p>猪</p>
+            <p>zhū<p>
+            <p>Pig</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="flashcard current">
+      <div class="flashcard-front">
         <img class="flashcard-image" src="http://www.publicdomainpictures.net/pictures/40000/velka/dog-cartoon.jpg"/>
       </div>
       <div class="flashcard-body flashcard-back hide" >
@@ -53,4 +97,4 @@
       </div>
     </div>
   </body>
-</html>
+</html> -->
